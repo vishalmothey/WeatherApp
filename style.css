@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+
+body {
+    margin: 0;
+    /* background-color: linear-gradient(300 deg, #757b87, #909d9d); */
+    
+    background: rgb(175,14,210);
+    background: linear-gradient(45deg, rgba(175,14,210,1) 22%, rgba(210,14,133,1) 51%, rgba(0,65,255,1) 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    padding-bottom: 1rem;
+    font-size: 30px;
+}
+
+cite {
+    padding-bottom: 3rem;
+    font-size: 15px;
+    text-align: center;
+}
+
+input {
+    padding: 1rem;
+    border-radius: 25px;
+    border: none;
+    background-color: #fff;
+    font-family: inherit;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    min-width: 300px;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+input:focus {
+    outline: none;
+}
+
+.weather {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.weather h2 {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* .weather img {
+    transform: scale(2);
+} */
+
+@media screen and (max-width: 550px) {
+    body {
+        margin: 7px;
+    }
+
+    h1{
+        font-size: 26px;
+        text-align: center;
+    }
+
+    input {
+        min-width: 300px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    body {
+        margin: 5px;
+    }
+
+    input {
+        min-width: 220px;
+        font-size: 0.6rem;
+    }
+}
